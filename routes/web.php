@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PlayerController@home')->name('home');
+Route::get('/player', 'PlayerController@player')->name('player');
+Route::get('/about', 'PlayerController@about')->name('about');

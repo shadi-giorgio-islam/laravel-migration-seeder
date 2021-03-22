@@ -18,7 +18,7 @@ class CreatePlayersTable extends Migration
             $table->string('nome');
             $table->string('cognome');
             $table->date('data_nascita');
-            $table->string('Luogo_nascita');
+            $table->string('luogo_nascita');
             $table->timestamps();
         });
     }
