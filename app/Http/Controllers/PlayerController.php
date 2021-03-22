@@ -13,7 +13,11 @@ class PlayerController extends Controller
     }
   public function player()
     {
-        return view('player');
+        $giocatori = Player::all();
+        $data = [
+          'giocatori' => $giocatori
+        ];
+        return view('player', $data);
     }
   public function about()
   {
